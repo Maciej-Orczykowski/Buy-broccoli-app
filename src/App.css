@@ -1,7 +1,6 @@
 .App {
-  background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-broccoli-vector-illustration-design-scrapbooking-fabric-wallpap_107335-446.jpg?w=360");
   text-align: center;
-  min-height: 100vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,13 +8,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: Arial Black;
-}
-
-.App-link {
-  color: #000000;
-  position: relative;
-  bottom: 700px;
-  font-weight: bold;
 }
 
 .Main-Text {
@@ -27,101 +19,42 @@
   height: 120px;
   border-radius: 20px;
   position: relative;
-  bottom: 65px;
+  bottom: 0;
   border: 10px solid rgba(50, 150, 53, 0.7);
+}
+
+.Panels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 8%;
 }
 
 .Buying-Panel {
   background: rgba(50, 150, 53, 0.8);
-  position: relative;
-  right: 650px;
-  padding: 30px;
-  height: 380px;
-  border-radius: 20px;
-}
-
-.Selling-Panel {
-  background: rgba(50, 150, 53, 0.8);
-  position: relative;
-  left: 650px;
-  bottom: 442px;
   padding: 30px;
   height: 380px;
   border-radius: 20px;
 }
 
 .Add {
-  font-weight: bold;
-  font-size: 50px;
-  position: relative;
-  bottom: 50px;
-  -webkit-text-stroke: 1.5px black;
+  text-decoration: underline;
 }
 
-.Price {
-  position: relative;
-  bottom: 70px;
-  font-size: 40px;
-}
-
-.Price-Input {
-  position: relative;
-  bottom: 120px;
-  font-size: 15px;
-}
-
-.Amount {
-  position: relative;
-  bottom: 145px;
-  font-size: 40px;
-}
-
-.Number-Input {
-  position: relative;
-  bottom: 200px;
-  left: 35px;
-  font-size: 15px;
-}
-
-.Submit-Buy {
-  position: relative;
-  bottom: 110px;
-  right: 48px;
-  font-size: 30px;
+.Selling-Panel {
+  background: rgba(50, 150, 53, 0.8);
+  padding: 30px;
+  height: 380px;
+  border-radius: 20px;
 }
 
 .Issue {
-  font-weight: bold;
-  font-size: 50px;
-  position: relative;
-  bottom: 50px;
-  -webkit-text-stroke: 1.5px black;
+  text-decoration: underline;
 }
 
-.Sell-Amount {
-  position: relative;
-  bottom: 30px;
-  font-size: 40px;
-}
-
-.Selling-Value {
-  position: relative;
-  bottom: 80px;
-  left: 35px;
-  font-size: 15px;
-}
-
-.Submit-Sell {
-  position: relative;
-  top: 60px;
-  right: 43px;
-  font-size: 30px;
-}
 .Orders {
   overflow: auto;
   display: flex;
-  position: relative;
-  bottom: 882px;
   left: 30px;
   background-color: rgba(50, 150, 53, 0.8);
   border-radius: 20px;
@@ -148,4 +81,15 @@
   bottom: 3px;
   left: 4px;
   font-weight: bold;
+}
+
+.App-link {
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-broccoli-vector-illustration-design-scrapbooking-fabric-wallpap_107335-446.jpg?w=360");
 }

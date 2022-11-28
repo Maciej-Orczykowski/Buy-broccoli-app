@@ -85,80 +85,78 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="Main-Text">Buy broccoli!</h1>
-      <div className="Buying-Panel">
-        <p className="Add">Add</p>
-        <p className="Price">Price per unit:</p>
-        <input
-          onChange={inputPrice}
-          value={myPrice}
-          type="number"
-          step="0.1"
-          min="0.1"
-          max="1000"
-          className="Price-Input"
-        />
-        <p className="Amount">Amount</p>
-        <input
-          onChange={inputAmount}
-          value={myAmount}
-          type="number"
-          step="10"
-          min="10"
-          max="10000"
-          className="Number-Input"
-        />
-        <button
-          className="Submit-Buy"
-          onClick={() => {
-            addBroccoli();
-          }}
-        >
-          Add
-        </button>
-      </div>
-      <div className="Selling-Panel">
-        <p className="Issue">Issue</p>
-        <p className="Sell-Amount">Amount</p>
-        <input
-          onChange={inputAmount2}
-          value={myAmount2}
-          step="10"
-          min="10"
-          max="1000"
-          className="Selling-Value"
-          type="number"
-        />
-        <button
-          className="Submit-Sell"
-          onClick={() => {
-            sellBroccoli();
-          }}
-        >
-          Sell
-        </button>
-      </div>
-      <div className="Orders">
-        {myBroccoli.map((x) => (
-          <div>
-            <img width="125" alt="" src={Broccoli} />
-            <div className="Orders2">
-              <div>{x.price} zł/unit</div>
-              <div>
-                {x.amount} units{""}
-                <button
-                  className="delButton"
-                  onClick={() => {
-                    deleteBroccoli(x.id, x.amount);
-                  }}
-                >
-                  X
-                </button>
+      <div className="Main-Text">Buy broccoli!</div>
+      <div className="Panels">
+        <div className="Buying-Panel">
+          <p className="Add">Add</p>
+          <p>Price per unit:</p>
+          <input
+            onChange={inputPrice}
+            value={myPrice}
+            type="number"
+            step="0.1"
+            min="0.1"
+            max="1000"
+          />
+          <p>Amount</p>
+          <input
+            onChange={inputAmount}
+            value={myAmount}
+            type="number"
+            step="10"
+            min="10"
+            max="10000"
+          />
+          <button
+            onClick={() => {
+              addBroccoli();
+            }}
+          >
+            Add
+          </button>
+        </div>
+        <div className="Orders">
+          {myBroccoli.map((x) => (
+            <div>
+              <img width="125" alt="" src={Broccoli} />
+              <div className="Orders2">
+                <div>{x.price} zł/unit</div>
+                <div>
+                  {x.amount} units{""}
+                  <button
+                    className="delButton"
+                    onClick={() => {
+                      deleteBroccoli(x.id, x.amount);
+                    }}
+                  >
+                    X
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="Selling-Panel">
+          <p className="Issue">Issue</p>
+          <p>Amount</p>
+          <input
+            onChange={inputAmount2}
+            value={myAmount2}
+            step="10"
+            min="10"
+            max="1000"
+            type="number"
+          />
+          <button
+            onClick={() => {
+              sellBroccoli();
+            }}
+          >
+            Sell
+          </button>
+        </div>
       </div>
+
       <a
         className="App-link"
         href="https://github.com/Maciej-Orczykowski?tab=repositories"
