@@ -156,15 +156,6 @@ function App() {
           </button>
         </div>
       </div>
-
-      <a
-        className="App-link"
-        href="https://github.com/Maciej-Orczykowski?tab=repositories"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Click to see more projects!
-      </a>
     </div>
   );
 }
