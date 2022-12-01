@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Buy-broccoli-app/static/css/main.bd9b60ef.css",
+    "main.js": "/Buy-broccoli-app/static/js/main.0c07f607.js",
+    "static/js/787.4f9429f9.chunk.js": "/Buy-broccoli-app/static/js/787.4f9429f9.chunk.js",
+    "static/media/Broccoli.png": "/Buy-broccoli-app/static/media/Broccoli.28228b4d001d662409c9.png",
+    "index.html": "/Buy-broccoli-app/index.html",
+    "main.bd9b60ef.css.map": "/Buy-broccoli-app/static/css/main.bd9b60ef.css.map",
+    "main.0c07f607.js.map": "/Buy-broccoli-app/static/js/main.0c07f607.js.map",
+    "787.4f9429f9.chunk.js.map": "/Buy-broccoli-app/static/js/787.4f9429f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd9b60ef.css",
+    "static/js/main.0c07f607.js"
+  ]
+}
